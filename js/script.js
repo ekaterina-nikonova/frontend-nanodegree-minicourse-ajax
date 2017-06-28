@@ -49,7 +49,7 @@ function loadData() {
     });
 
     //Load Wikipedia links
-    var wikiURL = 'http:\/\/en.wikipedia.org\/w\/api.php';
+    var wikiURL = 'https:\/\/en.wikipedia.org\/w\/api.php';
     $.ajax({
       url: wikiURL,
       datatype: 'jsonp',
