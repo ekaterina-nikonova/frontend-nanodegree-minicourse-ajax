@@ -52,13 +52,13 @@ function loadData() {
     var wikiURL = 'http:\/\/en.wikipedia.org\/w\/api.php';
     $.ajax({
       url: wikiURL,
+      datatype: 'jsonp',
       data: {
         action: 'opensearch',
         search: city,
         format: 'json',
         callback: 'wikiCallback'
       },
-      datatype: 'jsonp',
       success: function(data) {
         console.log(data);
       }
